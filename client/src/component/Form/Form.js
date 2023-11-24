@@ -6,8 +6,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import {createPost, updatePost} from '../../actions/posts';
 import {useNavigate} from 'react-router-dom';
 
+
 const Form = ({currentId, setCurrentId}) =>{
-    
     const [postData, setPostData] =useState({title:'', message: '', tags:'', selectedFile:''})
     const post = useSelector((state)=> currentId? state.posts.posts.find((post) => post._id === currentId): null);
     const classes = useStyles();

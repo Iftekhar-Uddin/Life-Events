@@ -8,7 +8,6 @@ const Posts = ({ setCurrentId }) => {
   const classes = useStyles();
   const { posts, isLoading } = useSelector((state) => state.posts);
 
-
   if (!posts.length && !isLoading) {
     return (
     <Paper elavation={6} className={classes.loadingPaper}>

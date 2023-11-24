@@ -111,9 +111,6 @@ const Auth = () => {
 export default Auth;
 
 
-
-
-
 // const componentClicked = (req) => {
 
 // };

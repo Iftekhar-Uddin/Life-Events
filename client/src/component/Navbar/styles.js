@@ -4,29 +4,29 @@ import { deepPurple } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 13,
-    margin: '30px 0',
+    margin: '10px 0px',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 40px',
+    padding: '8px 25px',
   },
   heading: {
     color: 'green',
-    fontSize: '35px',
+    fontSize: '25px',
     textDecoration: 'none',
   },
   image: {
-    marginLeft: '15px',
+    marginLeft: '10px',
   },
   toolbar: {
     display: 'flex',
     justifyContent: 'flex-end',
-    width: '300px',
+    width: '350px',
   },
   profile: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     width: '150px',
   },
   userName: {

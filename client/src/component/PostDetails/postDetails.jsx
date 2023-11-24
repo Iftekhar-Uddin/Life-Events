@@ -38,6 +38,7 @@ const PostDetails = () => {
       return (
         <Paper style={{ padding: '20px', borderRadius: '15px' }} elevation={6}>
           <div className={classes.card}>
+          
             <div className={classes.section}>
               <Typography variant="h3" component="h2">{post.title}</Typography>
               <Typography gutterBottom variant="h6" color="textSecondary" component="h2">
@@ -51,12 +52,15 @@ const PostDetails = () => {
               <Divider style={{ margin: '20px 0' }} />
               {/* <Typography variant="body1"><strong>Realtime Chat - coming as soon as possible!</strong></Typography> */}
               {/* <Divider style={{ margin: '20px 0' }} /> */}
+
+              <div className={classes.imageSection}>
+                <img className={classes.media} src={post.selectedFile} alt={post.title} />
+              </div>
+
               <CommentSection post={post} />
               <Divider style={{ margin: '20px 0' }} />
             </div>
-            <div className={classes.imageSection}>
-              <img className={classes.media} src={post.selectedFile} alt={post.title} />
-            </div>
+
           </div>
           {!!recommendedPosts.length && (
             <div className={classes.section}>
@@ -86,7 +90,7 @@ const PostDetails = () => {
         <Paper elavation={6} className={classes.loadingPaper}>
         <CircularProgress size="7rem"/>
         </Paper>
-        )
+      )
     }
   };
 
